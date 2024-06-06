@@ -1,4 +1,10 @@
-import { Body, Controller, Param, ParseIntPipe, Post, Query } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  ParseIntPipe,
+  Post,
+  Query,
+} from '@nestjs/common';
 import { AppService } from './app.service';
 import {
   FillNumberCmd,

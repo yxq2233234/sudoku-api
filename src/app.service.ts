@@ -2,7 +2,12 @@ import { Injectable } from '@nestjs/common';
 import { GameEntity } from './entity/game.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { FillNumberCmd, FillNumberResultDto, GameDto, NewGameDto } from "./types";
+import {
+  FillNumberCmd,
+  FillNumberResultDto,
+  GameDto,
+  NewGameDto,
+} from './types';
 import Sudoku from './sudoku';
 
 @Injectable()

@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { GameEntity } from './entity/game.entity';
-import * as process from "node:process";
+import * as process from 'node:process';
 
 @Module({
   imports: [
