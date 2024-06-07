@@ -37,3 +37,9 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
+
+# docker 打包
+```bash
+docker build -t sudoku .
+docker run -p 3000:3000 sudoku
+```
