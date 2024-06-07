@@ -22,7 +22,7 @@ export class AppService {
     const question = sudoku.getQuestion();
     const playerAnswer = Array(81).fill(0);
     for (let i = 0; i < 81; i++) {
-      if (question[i] === 0) {
+      if (question[i] !== 0) {
         playerAnswer[i] = -1;
       }
     }
