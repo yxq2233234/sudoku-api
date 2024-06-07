@@ -34,7 +34,7 @@ export class AppController {
   }
 
   @ApiOperation({ summary: '填写一个数字 填0等于清空' })
-  @ApiResponse({ type: GameDto })
+  @ApiResponse({ type: FillNumberResultDto })
   @Post('/fill-number')
   async fillNumber(@Body() cmd: FillNumberCmd): Promise<FillNumberResultDto> {
     return this.appService.fillNumber(cmd);
